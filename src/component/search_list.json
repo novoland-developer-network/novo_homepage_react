@@ -1,0 +1,18 @@
+[
+  [
+    {
+      "title": "百度",
+      "href": "https://www.baidu.com/s?wd="
+    },
+    {
+      "title": "必应",
+      "href": "https://cn.bing.com/search?q="
+    }
+  ],
+  [
+    {
+      "title": "九州奇幻世界百科",
+      "href": "https://jiuzhou.huijiwiki.com/?search="
+    }
+  ]
+]
