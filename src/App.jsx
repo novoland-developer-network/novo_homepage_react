@@ -6,8 +6,10 @@ import Header from "./component/Header";
 import Content from "./component/Content";
 
 export default () => (
-    <Container fluid={true}>
+    <>
         <Header/>
-        <Content/>
-    </Container>
+        <Container>
+            <Content/>
+        </Container>
+    </>
 );

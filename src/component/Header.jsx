@@ -4,7 +4,7 @@ import {Image, Nav, Navbar} from 'react-bootstrap'
 // 头部组件
 
 export default () => (
-    <Navbar variant="dark" bg="dark" expand="lg" fixed="top">
+    <Navbar variant="dark" bg="dark" expand="lg" sticky="top">
         <Navbar.Brand href="#home">
             <Image
                 alt=""

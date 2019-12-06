@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="807fe640-1213-41ae-874e-6228094c72e2" name="Default Changelist" comment="" />
+    <list default="true" id="170a0765-4629-4863-a20d-be43e0793184" name="Default Changelist" comment="实现了头部和搜索功能&#10;&#10;TODO: 灰机wiki的搜索还有问题">
+      <change afterPath="$PROJECT_DIR$/src/component/Links.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/list/links.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Content.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/search_list.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/search_list.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +20,16 @@
       <executable />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
@@ -19,6 +37,9 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1UXpzNZ6D5AvOK2Y9rgWsW7ebCx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -29,10 +50,34 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="D:/PHPSTUDY/PHPTutorial/WWW" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -60,11 +105,38 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="689" y="355" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1575513147995">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="689" y="355" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1920.1160@0.0.1920.1160" timestamp="1575513147995" />
+    <state width="1628" height="304" key="GridCell.Tab.0.bottom" timestamp="1575624959208">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1628" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1575624959208" />
+    <state width="1628" height="304" key="GridCell.Tab.0.center" timestamp="1575624959208">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1628" height="304" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1575624959208" />
+    <state width="1628" height="304" key="GridCell.Tab.0.left" timestamp="1575624959208">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1628" height="304" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1575624959208" />
+    <state width="1628" height="304" key="GridCell.Tab.0.right" timestamp="1575624959208">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1628" height="304" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1575624959208" />
     <state x="468" y="216" key="SettingsEditor" timestamp="1575513172065">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
