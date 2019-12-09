@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import {Button, Dropdown, DropdownButton, Form, InputGroup} from "react-bootstrap";
 import list from "./search_list";
+import dark_list from "./search_list_dark";
+import eggs_list from "./search/easter_eggs"
 
 /**
  * 搜索框
@@ -23,10 +25,14 @@ class SearchField extends Component {
             if (href === "") title = "搜索引擎"
         }
 
+        const search_list = list;
+
         this.state = {
             title,
             href,
-            keyword: ""
+            keyword: "",
+            search_list,
+            eggs: null
         };
     }
 
@@ -35,7 +41,7 @@ class SearchField extends Component {
     }
 
     /**
-     * 搜索操作
+     * 记忆最后使用的搜索引擎
      * @param title
      * @param href
      */
@@ -50,12 +56,11 @@ class SearchField extends Component {
 
     /**
      * 生成搜索引擎的列表
-     * @param list
      * @returns {[]}
      */
-    dropList = (list) => {
+    dropList = () => {
         let drop_list = [];
-        list.forEach((v, i) => {
+        this.state.search_list.forEach((v, i) => {
             if (i !== 0) {
                 drop_list.push(
                     <Dropdown.Divider key={i}/>
@@ -82,10 +87,45 @@ class SearchField extends Component {
     };
 
     /**
+     * 打开黑暗模式的搜索列表
+     */
+    changeSearchList = () => {
+        this.setState({
+            search_list: dark_list,
+            title: "里·搜索引擎",
+            keyword: ""
+        });
+        this.props.onchangeThemes('dark');
+    };
+
+
+    easterEggs = () => {
+        const changeSearchList = this.changeSearchList;
+
+        for (let index in eggs_list) {
+            const eggs = eggs_list[index];
+            if (this.state.keyword === eggs.secret) {
+                const method = eggs.method;
+                eval(`${method}()`);
+                this.setState({
+                    eggs: method
+                });
+                return true;
+            }
+        }
+
+        return false;
+    };
+
+    /**
      * 搜索提交
      */
     toSearch = () => {
-        console.log(this.state);
+
+        if (this.easterEggs()) {
+            return;
+        }
+
         if (this.state.href !== "") {
             // window.location.href = this.state.href + this.state.keyword;
             window.open(this.state.href + this.state.keyword, "_blank");
@@ -113,9 +153,9 @@ class SearchField extends Component {
                     <DropdownButton
                         id="search"
                         as={InputGroup.Prepend}
-                        variant="outline-secondary"
+                        variant={this.props.theme === "dark" ? "dark" : "outline-secondary"}
                         title={this.state.title}>
-                        {this.dropList(list)}
+                        {this.dropList()}
                     </DropdownButton>
                     <Form.Control
                         name="keyword"
@@ -125,7 +165,7 @@ class SearchField extends Component {
                         size="lg"
                         placeholder="搜你所想"/>
                     <InputGroup.Append>
-                        <Button type="submit" variant="primary">搜索</Button>
+                        <Button type="submit" variant={this.props.theme === 'dark' ? 'dark' : "primary"}>搜索</Button>
                     </InputGroup.Append>
                 </InputGroup>
             </Form>

@@ -14,5 +14,19 @@
       "title": "九州WIKI",
       "href": "https://jiuzhou.huijiwiki.com/index.php?search="
     }
+  ],
+  [
+    {
+      "title": "辞典",
+      "href": "https://cn.bing.com/dict/search?q="
+    },
+    {
+      "title": "英译汉",
+      "href": "https://fanyi.baidu.com/#en/zh/"
+    },
+    {
+      "title": "汉译英",
+      "href": "https://fanyi.baidu.com/#zh/en/"
+    }
   ]
 ]

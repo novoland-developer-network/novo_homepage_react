@@ -1,0 +1,11 @@
+[
+  {
+    "secret": "Joker_",
+    "method": "changeSearchList",
+    "mystery": "(I believe… whatever doesn’t kill you simply makes you…stranger.)_"
+  },
+  {
+    "secret": "exit",
+    "method": "reset"
+  }
+]
