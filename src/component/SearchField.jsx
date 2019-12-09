@@ -30,6 +30,10 @@ class SearchField extends Component {
         };
     }
 
+    componentDidMount() {
+        document.getElementById("keyword").focus();
+    }
+
     /**
      * 搜索操作
      * @param title
@@ -83,7 +87,8 @@ class SearchField extends Component {
     toSearch = () => {
         console.log(this.state);
         if (this.state.href !== "") {
-            window.location.href = this.state.href + this.state.keyword;
+            // window.location.href = this.state.href + this.state.keyword;
+            window.open(this.state.href + this.state.keyword, "_blank");
         } else {
             alert("你尚未选择搜索引擎");
             document.getElementById("search").focus();
@@ -116,6 +121,7 @@ class SearchField extends Component {
                         name="keyword"
                         value={this.state.keyword}
                         onChange={this.typeHandler}
+                        id="keyword"
                         size="lg"
                         placeholder="搜你所想"/>
                     <InputGroup.Append>
