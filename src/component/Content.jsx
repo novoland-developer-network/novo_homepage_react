@@ -1,7 +1,7 @@
 import React from "react";
 import {Col, Row} from "react-bootstrap";
 import SearchField from "./SearchField";
-// import Links from "./Links";
+import Links from "./Links";
 
 /**
  * 正文组件
@@ -15,10 +15,10 @@ export default () => (
                 <SearchField/>
             </Col>
         </Row>
-        {/*<Row>*/}
-        {/*    <Col lg="12" xs="12">*/}
-        {/*        <Links/>*/}
-        {/*    </Col>*/}
-        {/*</Row>*/}
+        <Row>
+            <Col lg="12" xs="12">
+                <Links/>
+            </Col>
+        </Row>
     </Col>
 );
