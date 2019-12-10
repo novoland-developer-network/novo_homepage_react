@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="170a0765-4629-4863-a20d-be43e0793184" name="Default Changelist" comment="加入了里模式的彩蛋">
+    <list default="true" id="170a0765-4629-4863-a20d-be43e0793184" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/search_list.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/search_list.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/search_list_dark.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/search_list_dark.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +138,7 @@
       <updated>1575513055640</updated>
       <workItem from="1575513056804" duration="246000" />
       <workItem from="1575860970421" duration="1226000" />
-      <workItem from="1575944434827" duration="54000" />
+      <workItem from="1575944434827" duration="869000" />
     </task>
     <task id="LOCAL-00001" summary="更新了下方链接的样式">
       <created>1575627474214</created>
@@ -161,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575887050841</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="更新了萌娘百科的搜索引擎">
+      <created>1575944506156</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575944506156</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,7 +195,8 @@
     <MESSAGE value="更新了下方链接的样式" />
     <MESSAGE value="暂存了搜索之外的功能&#10;给搜索框加入了默认焦点&#10;搜索变为了打开新标签页" />
     <MESSAGE value="加入了里模式的彩蛋" />
-    <option name="LAST_COMMIT_MESSAGE" value="加入了里模式的彩蛋" />
+    <MESSAGE value="更新了萌娘百科的搜索引擎" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新了萌娘百科的搜索引擎" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -198,30 +206,30 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="689" y="355" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1920.1160@0.0.1920.1160" timestamp="1575513147995" />
-    <state x="569" y="119" key="CommitChangelistDialog2" timestamp="1575887049410">
+    <state x="569" y="119" key="CommitChangelistDialog2" timestamp="1575944504901">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="569" y="119" key="CommitChangelistDialog2/0.0.1920.1160@0.0.1920.1160" timestamp="1575887049410" />
+    <state x="569" y="119" key="CommitChangelistDialog2/0.0.1920.1160@0.0.1920.1160" timestamp="1575944504901" />
     <state x="92" y="92" width="1736" height="976" key="DiffContextDialog" timestamp="1575863488629">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="92" y="92" width="1736" height="976" key="DiffContextDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1575863488629" />
-    <state width="1378" height="294" key="GridCell.Tab.0.bottom" timestamp="1575887099201">
+    <state width="1372" height="294" key="GridCell.Tab.0.bottom" timestamp="1575946696826">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1378" height="294" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1575887099201" />
-    <state width="1378" height="294" key="GridCell.Tab.0.center" timestamp="1575887099201">
+    <state width="1372" height="294" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1575946696826" />
+    <state width="1372" height="294" key="GridCell.Tab.0.center" timestamp="1575946696826">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1378" height="294" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1575887099201" />
-    <state width="1378" height="294" key="GridCell.Tab.0.left" timestamp="1575887099201">
+    <state width="1372" height="294" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1575946696826" />
+    <state width="1372" height="294" key="GridCell.Tab.0.left" timestamp="1575946696825">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1378" height="294" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1575887099201" />
-    <state width="1378" height="294" key="GridCell.Tab.0.right" timestamp="1575887099201">
+    <state width="1372" height="294" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1575946696825" />
+    <state width="1372" height="294" key="GridCell.Tab.0.right" timestamp="1575946696826">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1378" height="294" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1575887099201" />
+    <state width="1372" height="294" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1575946696826" />
     <state x="540" y="309" key="IDE.errors.dialog" timestamp="1575863373645">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -230,10 +238,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="468" y="216" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1575886744464" />
-    <state x="552" y="309" key="Vcs.Push.Dialog.v2" timestamp="1575887067965">
+    <state x="552" y="309" key="Vcs.Push.Dialog.v2" timestamp="1575944508205">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="552" y="309" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1575887067965" />
+    <state x="552" y="309" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1575944508205" />
     <state x="626" y="308" width="799" height="622" key="find.popup" timestamp="1575886448467">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
