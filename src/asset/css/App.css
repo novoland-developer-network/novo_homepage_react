@@ -1,0 +1,22 @@
+@font-face {
+  font-family: indexFont;
+  src: url(../font/milanwen.ttf);
+}
+
+h1, .lang {
+  /*font-family: indexFont, cursive;*/
+  /*font-weight:bold !important;*/
+}
+
+
+.h1, h1 {
+  font-size: 2.3rem !important;
+}
+
+.h2, h2 {
+  font-size: 1.5rem !important;
+}
+
+p {
+  margin: 0 !important;
+}

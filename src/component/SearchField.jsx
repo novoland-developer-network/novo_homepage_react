@@ -6,9 +6,9 @@ import {
     Form,
     InputGroup,
 } from 'react-bootstrap';
-import list from './search_list';
-import dark_list from './search_list_dark';
-import eggs_list from './search/easter_eggs';
+import list from '../data/search_list';
+import dark_list from '../data/search_list_dark';
+import eggs_list from '../data/easter_eggs';
 
 /**
  * 搜索框
@@ -107,12 +107,14 @@ class SearchField extends Component {
 
 
     easterEggs = () => {
+        // eslint-disable-next-line
         const changeSearchList = this.changeSearchList;
 
         for (let index in eggs_list) {
             const eggs = eggs_list[index];
             if (this.state.keyword === eggs.secret) {
                 const method = eggs.method;
+                // eslint-disable-next-line
                 eval(`${method}()`);
                 this.setState({
                     eggs: method
@@ -152,7 +154,7 @@ class SearchField extends Component {
 
     render() {
         return (
-            <Form onSubmit={(e) => {
+            <Form className="lang" onSubmit={(e) => {
                 e.preventDefault();
                 this.toSearch();
             }} style={{marginTop: 30}}>
@@ -160,7 +162,9 @@ class SearchField extends Component {
                     <DropdownButton
                         id="search"
                         as={InputGroup.Prepend}
-                        variant={this.props.theme === "dark" ? "dark" : "outline-secondary"}
+                        variant={this.props.theme === 'dark'
+                            ? 'dark'
+                            : 'outline-secondary'}
                         title={this.state.title}>
                         {this.dropList()}
                     </DropdownButton>

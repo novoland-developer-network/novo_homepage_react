@@ -1,20 +1,21 @@
 import React from 'react';
-import './App.css';
+import './asset/css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Container} from "react-bootstrap"
-import Header from "./component/Header";
-import Content from "./component/Content";
-import DarkModal from "./component/DarkModal";
-import "./component/dark.css";
-// import eggs from "./component/search_list";
-import eggs_list from "./component/search/easter_eggs";
+import {Container} from 'react-bootstrap';
+import Header from './component/Header';
+import Content from './component/Content';
+import DarkModal from './component/DarkModal';
+import './asset/css/dark.css';
+import eggs_list from './data/easter_eggs';
+import Notice from './component/Notice';
+import 'normalize.css/normalize.css';
 
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             theme: null,
-            show: false
+            show: false,
         };
     }
 
@@ -60,8 +61,11 @@ class App extends React.Component {
             <>
                 <Header/>
                 <DarkModal show={this.state.show} onhide={this.hideModal}/>
+                <Notice theme={this.state.theme}/>
                 <Container>
-                    <Content theme={this.state.theme} onchangeThemes={(theme) => this.changeThemes(theme)}/>
+                    <Content theme={this.state.theme}
+                             onchangeThemes={(theme) => this.changeThemes(
+                                 theme)}/>
                 </Container>
             </>
         );

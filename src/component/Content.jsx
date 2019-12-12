@@ -1,7 +1,7 @@
-import React from "react";
-import {Col, Row} from "react-bootstrap";
-import SearchField from "./SearchField";
-import "./list/links.css"
+import React from 'react';
+import {Col, Row} from 'react-bootstrap';
+import SearchField from './SearchField';
+import '../asset/css/links.css';
 
 // import Links from "./Links";
 
@@ -11,7 +11,7 @@ import "./list/links.css"
  */
 class Content extends React.Component {
     render() {
-        let title = "广阔九州，大有可为!";
+        let title = '广阔九州，大有可为!';
         if (this.props.theme === "dark") {
             title = "茫茫天下，有几人知道我们的梦想和苦难";
         } else {
