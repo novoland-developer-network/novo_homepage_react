@@ -1,8 +1,14 @@
-import React, {Component} from "react";
-import {Button, Dropdown, DropdownButton, Form, InputGroup} from "react-bootstrap";
-import list from "./search_list";
-import dark_list from "./search_list_dark";
-import eggs_list from "./search/easter_eggs"
+import React, {Component} from 'react';
+import {
+    Button,
+    Dropdown,
+    DropdownButton,
+    Form,
+    InputGroup,
+} from 'react-bootstrap';
+import list from './search_list';
+import dark_list from './search_list_dark';
+import eggs_list from './search/easter_eggs';
 
 /**
  * 搜索框
@@ -10,9 +16,9 @@ import eggs_list from "./search/easter_eggs"
 class SearchField extends Component {
     constructor(props) {
         super(props);
-        const historySearch = localStorage.getItem("search_title");
+        const historySearch = localStorage.getItem('search_title');
 
-        let href = "", title = "搜索引擎";
+        let href = '', title = '搜索引擎';
         if (historySearch !== null) {
             title = historySearch;
             list.forEach(function (v) {
@@ -92,8 +98,9 @@ class SearchField extends Component {
     changeSearchList = () => {
         this.setState({
             search_list: dark_list,
-            title: "里·搜索引擎",
-            keyword: ""
+            title: '里·搜索引擎',
+            href: '',
+            keyword: '',
         });
         this.props.onchangeThemes('dark');
     };
