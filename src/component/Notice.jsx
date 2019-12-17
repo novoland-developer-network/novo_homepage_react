@@ -35,7 +35,7 @@ class Notice extends Component {
         notChild.style.transition = 'all 1s ease';
       }
 
-    }, 1000);
+    }, 3000);
 
   };
 
