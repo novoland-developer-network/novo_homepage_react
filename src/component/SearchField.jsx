@@ -24,7 +24,7 @@ class SearchField extends Component {
             list.forEach(function (v) {
                 v.forEach(function (value) {
                     if (value.title === title) {
-                        href = value.href;
+                        href = value.link;
                     }
                 });
             });
