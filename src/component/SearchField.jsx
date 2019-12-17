@@ -74,7 +74,7 @@ class SearchField extends Component {
             }
             v.forEach((value, index) => {
                 const title = value.title,
-                    href = value.href;
+                    href = value.link;
                 drop_list.push(
                     <Dropdown.Item
                         key={`${i}_${index}`}
