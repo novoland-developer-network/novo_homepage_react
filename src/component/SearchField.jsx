@@ -18,27 +18,29 @@ class SearchField extends Component {
         super(props);
         const historySearch = localStorage.getItem('search_title');
 
-        let href = '', title = '搜索引擎';
+        let link = '', title = '搜索引擎';
         if (historySearch !== null) {
             title = historySearch;
             list.forEach(function (v) {
                 v.forEach(function (value) {
                     if (value.title === title) {
-                        href = value.link;
+                        link = value.link;
                     }
                 });
             });
-            if (href === "") title = "搜索引擎"
+            if (link === '') {
+                title = "搜索引擎"
+            }
         }
 
         const search_list = list;
 
         this.state = {
             title,
-            href,
-            keyword: "",
+            link,
+            keyword: '',
             search_list,
-            eggs: null
+            eggs: null,
         };
     }
 
@@ -49,15 +51,15 @@ class SearchField extends Component {
     /**
      * 记忆最后使用的搜索引擎
      * @param title
-     * @param href
+     * @param link
      */
-    changeSearch = (title, href) => {
+    changeSearch = (title, link) => {
         this.setState({
             title,
-            href
+            link,
         });
 
-        localStorage.setItem("search_title", title);
+        localStorage.setItem('search_title', title);
     };
 
     /**
@@ -74,15 +76,15 @@ class SearchField extends Component {
             }
             v.forEach((value, index) => {
                 const title = value.title,
-                    href = value.link;
+                    link = value.link;
                 drop_list.push(
                     <Dropdown.Item
                         key={`${i}_${index}`}
-                        href={href}
+                        href={link}
                         onClick={(e) => {
                             e.preventDefault();
 
-                            this.changeSearch(title, href);
+                            this.changeSearch(title, link);
                         }}
                     >{title}</Dropdown.Item>
                 );
@@ -99,7 +101,7 @@ class SearchField extends Component {
         this.setState({
             search_list: dark_list,
             title: '里·搜索引擎',
-            href: '',
+            link: '',
             keyword: '',
         });
         this.props.onchangeThemes('dark');
@@ -135,12 +137,13 @@ class SearchField extends Component {
             return;
         }
 
-        if (this.state.href !== "") {
-            // window.location.href = this.state.href + this.state.keyword;
-            window.open(this.state.href + this.state.keyword, "_blank");
-        } else {
-            alert("你尚未选择搜索引擎");
-            document.getElementById("search").focus();
+        if (this.state.link !== '') {
+            // window.location.link = this.state.link + this.state.keyword;
+            window.open(this.state.link + this.state.keyword, '_blank');
+        }
+        else {
+            alert('你尚未选择搜索引擎');
+            document.getElementById('search').focus();
         }
     };
 
