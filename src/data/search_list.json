@@ -1,58 +1,50 @@
 [
     [
         {
-            "title": "百度",
-            "link": "https://www.baidu.com/s?wd="
-        },
-        {
             "title": "必应",
-            "link": "https://cn.bing.com/search?q="
+            "link": "https://cn.bing.com/search?q={keyword}"
         }
     ],
     [
         {
             "title": "九州WIKI",
-            "link": "https://jiuzhou.huijiwiki.com/index.php?search="
+            "link": "https://jiuzhou.huijiwiki.com/index.php?search={keyword}"
         }
     ],
     [
         {
             "title": "公众号名称",
-            "link": "https://weixin.sogou.com/weixin?type=1&query=111"
+            "link": "https://weixin.sogou.com/weixin?type=1&query={keyword}"
         },
         {
             "title": "公众号文章",
-            "link": "https://weixin.sogou.com/weixin?type=2&query=111"
+            "link": "https://weixin.sogou.com/weixin?type=2&query={keyword}"
         }
     ],
     [
         {
             "title": "萌娘百科",
-            "link": "https://zh.moegirl.org/index.php?search="
+            "link": "https://zh.moegirl.org/index.php?search={keyword}"
+        },
+        {
+            "title": "辞典",
+            "link": "https://cn.bing.com/dict/search?q={keyword}"
         }
     ],
     [
         {
-            "title": "辞典",
-            "link": "https://cn.bing.com/dict/search?q="
-        },
-        {
-            "title": "英译汉",
-            "link": "https://fanyi.baidu.com/#en/zh/"
-        },
-        {
-            "title": "汉译英",
-            "link": "https://fanyi.baidu.com/#zh/en/"
+            "title": "百度网盘搜索",
+            "link": "https://www.xiaobaipan.com/list-{keyword}.html"
         }
     ],
     [
         {
             "title": "GayHub",
-            "link": "https://github.com/search?q="
+            "link": "https://github.com/search?q={keyword}"
         },
         {
             "title": "码云",
-            "link": "https://gitee.com/search?q="
+            "link": "https://gitee.com/search?q={keyword}"
         }
     ]
 ]

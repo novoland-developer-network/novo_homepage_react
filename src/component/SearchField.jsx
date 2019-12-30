@@ -36,9 +36,13 @@ class SearchField extends Component {
         const search_list = list;
 
         this.state = {
+            /** @var title {String} */
             title,
+            /** @var link {String} */
             link,
+            /** @var keyword {String} */
             keyword: '',
+            /** @var search_list {Array} */
             search_list,
             eggs: null,
         };
@@ -139,7 +143,9 @@ class SearchField extends Component {
 
         if (this.state.link !== '') {
             // window.location.link = this.state.link + this.state.keyword;
-            window.open(this.state.link + this.state.keyword, '_blank');
+            const url = this.state.link.replace('{keyword}',
+                this.state.keyword);
+            window.open(url, '_blank');
         }
         else {
             alert('你尚未选择搜索引擎');
